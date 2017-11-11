@@ -1,0 +1,68 @@
+$title-color: #999;
+$menu-color: #607d8b;
+$menu-background-color: #eee;
+$active-color: #039be5;
+$active-background-color: #cfd8dc;
+
+h1 {
+  font: {
+    size: 1.2em;
+  }
+
+  color: $title-color;
+}
+
+h2 {
+  font: {
+    size: 2em;
+  }
+
+  margin: {
+    top: 0;
+  }
+
+  padding: {
+    top: 0;
+  }
+}
+
+nav {
+  a {
+    padding: 5px 10px;
+
+    text: {
+      decoration: none;
+    }
+
+    margin: {
+      top: 10px
+    }
+
+    display: inline-block;
+
+    background: {
+      color: $menu-background-color;
+    }
+
+    border: {
+      radius: 4px;
+    }
+
+    &:visited,
+    &:link {
+      color: $menu-color;
+    }
+
+    &:hover {
+      color: $active-color;
+
+      background: {
+        color: $active-background-color;
+      }
+    }
+
+    &.active {
+      color: $active-color
+    }
+  }
+}

@@ -1,0 +1,42 @@
+codecov:
+  notify:
+    require_ci_to_pass: true
+
+comment:
+  behavior: default
+  layout: header, diff
+  require_changes: false
+
+coverage:
+  precision: 2
+  range:
+  - 70.0
+  - 100.0
+  round: down
+  status:
+    changes: false
+    patch: true
+    project: true
+  notify:
+    gitter:
+      default:
+        url: https://webhooks.gitter.im/e/676190cc48cf0d594206
+        branches:
+          - master
+        threshold: null
+    slack:
+      default:
+        url: https://hooks.slack.com/services/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
+        branches:
+          - master
+        threshold: null
+
+parsers:
+  gcov:
+    branch_detection:
+      conditional: true
+      loop: true
+      macro: false
+      method: false
+  javascript:
+enable_partials: false

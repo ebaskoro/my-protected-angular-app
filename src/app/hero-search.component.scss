@@ -1,0 +1,33 @@
+.search-result {
+  border: {
+    bottom: 1px solid gray;
+    left: 1px solid gray;
+    right: 1px solid gray;
+  }
+
+  width:195px;
+
+  height: 16px;
+
+  padding: 5px;
+
+  background: {
+    color: white;
+  }
+
+  cursor: pointer;
+
+  &:hover {
+    color: #eee;
+
+    background: {
+      color: #607D8B;
+    }
+  }
+}
+
+#search-box {
+  width: 200px;
+
+  height: 20px;
+}
