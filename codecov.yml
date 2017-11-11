@@ -20,13 +20,13 @@ coverage:
   notify:
     gitter:
       default:
-        url: https://webhooks.gitter.im/e/676190cc48cf0d594206
+        url: https://webhooks.gitter.im/e/025504f93bf2fb637e81
         branches:
           - master
         threshold: null
     slack:
       default:
-        url: https://hooks.slack.com/services/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
+        url: https://hooks.slack.com/services/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
         branches:
           - master
         threshold: null
